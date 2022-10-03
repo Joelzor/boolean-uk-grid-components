@@ -59,19 +59,37 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 5px;
-
       }
 
       .center-grid {
+        display: grid;
+        place-items: center;
       }
 
       .centered {
+        width: 200px;
       }
 
       /* Grid within Grid Section */
       /* Practice re-using classes */
 
       .two-column-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+        gap: 5px;
+      }
+
+      .inner-container-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+      }
+
+      .inner-container-2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
       }
     </style>
   </head>
@@ -118,12 +136,12 @@
     <div>
       <h2>Grid within Grid #1</h2>
       <div class="container two-column-grid">
-        <div class="box">
+        <div class="box inner-container-1">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
         </div>
-        <div class="box">
+        <div class="box inner-container-2">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
