@@ -50,9 +50,16 @@
       }
 
       .three-column-grid__expand-two {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        gap: 5px;
       }
 
       .five-column-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+
       }
 
       .center-grid {
