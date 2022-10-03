@@ -76,7 +76,7 @@
       .two-column-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* grid-template-rows: repeat(3, 1fr); */
+        
         gap: 5px;
       }
 
@@ -91,6 +91,28 @@
         grid-template-columns: repeat(5, 1fr);
         gap: 5px;
       }
+      .grid-expansion-2 {
+        display: grid;
+        grid-template-columns: 60px 1fr 150px;
+      }
+
+      .inner-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+   
+      }
+
+      .inner-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .inner-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+      }
+
     </style>
   </head>
   <body>
@@ -152,14 +174,14 @@
     </div>
     <div>
       <h2>Grid within Grid #2 (Expansion)</h2>
-      <div class="container">
-        <div class="box">
+      <div class="container grid-expansion-2">
+        <div class="box inner-1">
           <div class="inner-box"></div>
         </div>
-        <div class="box expand">
+        <div class="box expand inner-2">
           <div class="inner-box width-sm"></div>
         </div>
-        <div class="box">
+        <div class="box inner-3">
           <div class="inner-box"></div>
           <div class="inner-box"></div>
           <div class="inner-box"></div>
